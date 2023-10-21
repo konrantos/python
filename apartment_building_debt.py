@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 def show_data(start_date,end_date):
 # Άνοιγμα του αρχείου CSV και ανάγνωση των περιεχομένων του ως λίστα.
- with open ("D:/1-ΣΧΟΛΗ/2-ΕΡΓΑΣΙΑ-ΑΡΧΕΣ/data.csv","r", encoding='utf-8') as file:
+ with open ("data.csv","r", encoding='utf-8') as file:
   data = list(csv.DictReader(file, delimiter=","))
   # Επανάληψη για κάθε γραμμή στα δεδομένα.
   for x in data:
@@ -31,7 +31,7 @@ def show_data(start_date,end_date):
 def statistics(start_date, end_date):
   # Κενή λίστα για την αποθήκευση των δεδομένων που πληρούν τα κριτήρια.
     data_list = []
-    with open ("D:/1-ΣΧΟΛΗ/2-ΕΡΓΑΣΙΑ-ΑΡΧΕΣ/data.csv","r", encoding='utf-8') as file:
+    with open ("data.csv","r", encoding='utf-8') as file:
         data = list(csv.DictReader(file, delimiter=","))
         # Επανάληψη για κάθε γραμμή στα δεδομένα.
         for x in data:
@@ -80,7 +80,7 @@ def sum_bills(start_date,end_date):
  building_ids=[]
  # Λίστα για τον υπολογισμό του συνολικού ποσού οφειλών ανά κτήριο.
  total=[]
- with open ("D:/1-ΣΧΟΛΗ/2-ΕΡΓΑΣΙΑ-ΑΡΧΕΣ/data.csv","r", encoding='utf-8') as file:
+ with open ("data.csv","r", encoding='utf-8') as file:
   data = list(csv.DictReader(file, delimiter=","))
   # Επανάληψη για κάθε γραμμή στα δεδομένα.
   for x in data:
@@ -114,7 +114,7 @@ def sum_bills(start_date,end_date):
 
 def matplot_lib(start_date,end_date):
  import matplotlib.pyplot as plt
- with open ("D:/1-ΣΧΟΛΗ/2-ΕΡΓΑΣΙΑ-ΑΡΧΕΣ/data.csv","r", encoding='utf-8') as file:
+ with open ("data.csv","r", encoding='utf-8') as file:
   data = list(csv.DictReader(file, delimiter=","))
   data_list2 = []
   for x in data:
